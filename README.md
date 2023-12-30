@@ -9,6 +9,27 @@
 sudo apt install docker-compose
 ```
 
+В корне проекта необходимо создать и заполнить файл .env:
+
+```
+# .env
+
+DEBUG='on'
+SECRET_KEY=
+
+DATABASE_NAME='postgres'
+DATABASE_USER='postgres'
+DATABASE_PASSWORD='mysecretpassword'
+DATABASE_HOST='db'
+
+STRIPE_API_KEY=
+
+EMAIL_HOST=
+EMAIL_PORT=465
+EMAIL_HOST_USER=
+EMAIL_HOST_PASSWORD=
+EMAIL_USE_SSL='on'
+```
 Для первого запуска необходимо собрать образ контейнера. Для этого, находясь в корневой директории проекта
 необходимо выполнить команду:
 
